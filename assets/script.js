@@ -34,7 +34,7 @@ var dailyHumidity = [];
 for (var i = 1; i < 6; i++) {
   dailyCard[i] = $("<div>")
     .attr("class", "col card m-2")
-    .css({ "background-color": "blue", color: "white" });
+    .css({ "background-color": "#5c80bc", color: "white" });
   dailyCardBody[i] = $("<div>").attr("class", "card-body");
   forecastDate[i] = $("<h3>");
   dailyForecastImg[i] = $("<img>").attr("alt", "Daily Weather Image");
@@ -181,19 +181,19 @@ function getAPI(urlLink) {
                 uvSpanElement.css({
                   "background-color": "green",
                   padding: "3px",
-                  "border-radius": "10px",
+                  "border-radius": "50px",
                 });
               } else if (Number(data.value) > 5) {
                 uvSpanElement.css({
                   "background-color": "red",
                   padding: "3px",
-                  "border-radius": "10px",
+                  "border-radius": "50px",
                 });
               } else {
                 uvSpanElement.css({
                   "background-color": "yellow",
                   padding: "3px",
-                  "border-radius": "10px",
+                  "border-radius": "50px",
                 });
               }
               formatFunction();
