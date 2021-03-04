@@ -1,15 +1,19 @@
 .navbar-brand {
-  color: white;
+  color: #e8c547;
   font-size: 50px;
 }
 
 aside {
-  background-color: grey;
+  background-color: #cdd1c4;
   min-height: 50%;
 }
 
 .float_left {
   float: left;
+}
+
+.btn {
+  background-color: #e8c547;
 }
 
 .btnsize {
